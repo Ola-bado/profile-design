@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+.dog {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+.logo{
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    left: 100px;
+    margin-top: 45px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 780px;
+    height: 60px;
+    left: 271px;
+    top: 50px;
+    background: #262626;
+    box-shadow: 4px 8px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+   position: fixed;
+   z-index: 1 ;
+}
+
+#navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 50px;
+    margin-top: 20px;
+    left: 20px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    position: relative;
+}   
+
+#navbar ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+#navbar ul li a:hover::after{
+    width: 100%;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    top: -510px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.about-2 {
+    flex-basis: 60%;
+    margin: 100px;
+    margin-top: -500px;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+ 
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    position: absolute;
+}
+
+.tab-links.active-link::after{
+    width: 80%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 5px;
+}
+.tab-contents ul li span {
+    color: #ff004f;
+    font-size: 14px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+h2{
+    position: absolute;
+    left: 550px;
+    top: 245px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+h2 span {
+    color: #ff004f;
+}
+
+.prof {
+    width: 150px;
+    border-radius: 10px;
+    height: 150px;
+    position: absolute;
+    left: 550px;
+    top: 300px;
+}
+
+.me{
+    position: absolute;
+    left: 710px;
+    top: 300px;
+    font-weight: 400;
+    font-size: 12px;
+}
+.btn a {
+    display: grid;
+    left: 100px;
+    top: 550px;
+    height: 50px;
+    width: 150px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    position: absolute;
+    place-content: center;
+    font-family: "Poppins",sans-serif;
+    color: #ff004f;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 3px;
+ }
+ 
+.btn a:hover{
+     background-color: #ff004f;
+     border: 0px;
+     color: #fff;
+ }
+ 
+.btn2 a {
+     display: grid;
+     left: 300px;
+     top: 550px;
+     height: 50px;
+     width: 150px;
+     background: transparent;
+     border: 2px solid #fff;
+     border-radius: 20px;
+     position: absolute;
+     place-content: center;
+     font-family: "Poppins",sans-serif;
+     color: #ff004f;
+     font-size: 20px;
+     font-weight: 500;
+     text-decoration: none;
+     letter-spacing: 3px; 
+ }
+ 
+.btn2 a:hover{
+    background-color: #ff004f;
+    border: 0px;
+    color: #fff;
+}
+
+.box1 {
+    display: grid;
+    left: 950px;
+    top: 500px;
+    position: absolute;
+    width: 360px;
+    height: 80px;
+    background: transparent;
+    border: 2px solid #ff004f;
+    position: absolute;
+    place-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.box1 i {
+    place-self: center;
+}
+.box1:hover{
+    background-color:  #0F1519;
+}
+
+.box2 {
+    display: grid;
+    left: 550px;
+    top: 500px;
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    background: transparent;
+    border: 2px solid #ff004f;
+    position: absolute;
+    place-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px; 
+}
+
+.box2 i {
+    padding-left: 80px;
+}
+.box2:hover{
+    background-color:  #0F1519;
+}
+
+.box2 a {
+    text-decoration: none;
+    color: white ;
+}
